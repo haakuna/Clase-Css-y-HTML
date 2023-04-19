@@ -3,20 +3,26 @@ h1{
     color: crimson;
 }
 div.contenedor{
-    position: relative;
-    border: 3px dashed greenyellow;
+    
+    border: 4px dashed greenyellow;
     width: 30%;
+    height: 100px;
+    overflow: auto;
+
+}
+div.contenedor.flotado{
+
+    float: left;
+}
+div.contenedor.flotado.contenedor1{
+    border: 3px dashed greenyellow;
+}
+div.contenedor.flotado.contenedor2{
+    border: 3px dashed cornflowerblue;
+    float: right;
+}
+div.contenedor.flotado.contenedor3{
+    clear: both;
+    border: 3px dashed darkorange;
     margin: auto;
-}
-img.imagen{
-    width: 100%;
-    opacity: .3;
-}
-div.centro{
-    position: absolute;
-    top: 50%;
-    border: 1px solid blue;
-    width: 100%;
-    text-align: center;
-    font-size: 25px;
 }
